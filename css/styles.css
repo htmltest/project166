@@ -1,0 +1,175 @@
+*,
+*::before,
+*::after {outline:none; box-sizing:border-box}
+
+html {min-width:480px}
+
+body {min-width:480px; margin:0; padding:0; background:#fff; -webkit-text-size-adjust:100%; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
+.fonts-loaded body {font-family:Gilroy, sans-serif}
+
+::-ms-clear {display:none}
+
+.wrapper {width:100%; min-width:480px; position:relative; overflow:hidden}
+
+.container {max-width:1140px; margin:0 auto; position:relative}
+.container::after {content:""; display:block; clear:both}
+
+@media screen and (max-width:1139px) {
+    .container {padding:0 15px}
+}
+
+.header {position:absolute; left:0; top:0; right:0; padding:39px 0 0 68px; z-index:1}
+.logo {float:left; width:126px; height:38px; background:url(../images/logo.svg) no-repeat; background-size:100%}
+.logo-dns {float:left; width:228px; height:24px; background:url(../images/logo-dns.png) no-repeat; margin:6px 0 0 47px; position:relative}
+.logo-dns::before {content:""; display:block; width:2px; height:38px; background:#b0afb4; position:absolute; left:-24px; top:-6px}
+
+.buy-inner {display:inline-block; vertical-align:top; text-align:left}
+.buy-price {line-height:64px}
+.buy-price strong {font-size:32px; font-weight:bold; color:#f1c835}
+.buy-price strong span {font-size:64px}
+.buy-price em {font-style:normal; font-size:28px; color:#b9b8b8; text-decoration:line-through; margin:0 0 0 18px}
+.buy-link {margin:-14px 0 0 0}
+
+.btn {display:inline-block; vertical-align:top; height:55px; padding:0 20px; color:#110e27; text-decoration:none; border-radius:8px; font-weight:bold; font-size:34px; line-height:55px; background:#f1c835; transition:all 0.2s}
+.btn:hover {opacity:0.8}
+.btn span {font-size:32px; font-weight:600; display:inline-block; vertical-align:top; position:relative; margin:0 57px 0 0}
+.btn span::after {content:""; display:block; position:absolute; right:-32px; top:8px; width:2px; height:38px; background:#3d2d2b}
+
+.welcome {position:relative; height:791px; background:#0d0e26 url(../images/welcome.jpg) no-repeat center}
+.welcome-container {max-width:740px; text-align:center; padding:218px 0 0 0; color:#fff}
+.welcome-logo {width:344px; height:53px; margin:0 auto; background:url(../images/welcome-logo.svg) no-repeat; background-size:100%}
+.welcome-text-1 {font-weight:600; font-size:42px; line-height:48px; margin:19px 0 0 0}
+.welcome-text-1::after {content:""; display:inline-block; vertical-align:middle; width:32px; height:23px; background:url(../images/welcome-text-1.svg) no-repeat; background-size:100%; margin:0 0 0 11px}
+.welcome-text-2 {font-weight:600; font-size:42px; line-height:48px}
+.welcome-text-3 {font-weight:500; font-size:22px; line-height:31px; padding:16px 0 0 0}
+.welcome-buy {padding:38px 0 0 0}
+.welcome-notice {font-weight:300; font-size:12px; line-height:15px; color:#c1c0c0; padding:93px 0 0 0}
+
+.links {padding:33px 0 63px 0; font-size:0; line-height:0; letter-spacing:-1px; text-align:center}
+.links-inner {margin:0 -10px}
+.links-item {display:inline-block; vertical-align:top; width:33.33%; padding:0 10px}
+.links-item a {display:block; padding:84px 0 0 0; position:relative}
+.links-item a::before {content:""; display:block; height:170px; background:url(../images/links-item-bg.png) no-repeat center; background-size:cover; transition:all 0.2s}
+.links-item a:hover::before {opacity:0.8}
+.links-item-photo {position:absolute; left:0; top:0; right:0}
+.links-item:first-child .links-item-photo {top:6px}
+
+.why-content {float:right; width:582px}
+.why-title {font-weight:bold; font-size:42px; line-height:47px}
+.why-list {margin:35px -13px 0 -13px; font-weight:600; font-size:18px; line-height:21px}
+.why-list-inner {display:table; width:100%; border-collapse:separate; border-spacing:10px 10px}
+.why-list-row {display:table-row}
+.why-list-item {display:table-cell; vertical-align:middle; width:33.33%; text-align:center; position:relative; border-width:1px; border-style:solid; border-radius:5px; padding:7px 0 9px 0; white-space:nowrap}
+
+.realme7pro {background:#030a0d; padding:97px 0 0 0}
+.realme7pro-why {margin:0 -80px; height:580px; background:#fff url(../images/realme7pro-why.jpg) no-repeat; border-radius:10px; padding:96px 80px 0 80px}
+.realme7pro-why::after {content:""; display:block; clear:both}
+.realme7pro-why .why-title {color:#000}
+.realme7pro-why .why-list {color:#000}
+.realme7pro-why .why-list-item {border-color:#18122f}
+.realme7pro-buy {padding:18px 0 0 0}
+.realme7pro-buy .buy-price strong {color:#110e27}
+.realme7pro-charge {margin:0 -26px 0 0; height:518px; background:url(../images/realme7pro-charge.png) no-repeat right top; padding:74px 0 0 0}
+.realme7pro-charge-title {font-weight:bold; color:#fff; font-size:42px; line-height:56px}
+.realme7pro-charge-props {margin:42px 0 0 0}
+.realme7pro-charge-props::after {content:""; display:block; clear:both}
+.realme7pro-charge-prop {float:left; color:#f1c835; position:relative}
+.realme7pro-charge-prop-1 {padding:0 0 0 79px}
+.realme7pro-charge-prop-1::before {content:""; display:block; position:absolute; left:16px; top:-2px; width:37px; height:61px; background:url(../images/icon-1.png) no-repeat}
+.realme7pro-charge-prop-2 {padding:0 0 0 71px; margin:0 0 0 74px}
+.realme7pro-charge-prop-2::before {content:""; display:block; position:absolute; left:0; top:-2px; width:55px; height:70px; background:url(../images/icon-2.png) no-repeat}
+.realme7pro-charge-prop-3 {padding:0 0 0 75px; clear:left; margin:66px 0 0 0}
+.realme7pro-charge-prop-3::before {content:""; display:block; position:absolute; left:19px; top:-2px; width:29px; height:67px; background:url(../images/icon-3.png) no-repeat}
+.realme7pro-charge-prop-title {font-size:32px; line-height:32px; font-weight:600}
+.realme7pro-charge-prop-text {font-size:22px; line-height:22px; font-weight:500; padding:5px 0 0 0}
+.realme7pro-camera {padding:22px 0 0 0; position:relative; z-index:1}
+.realme7pro-camera::after {content:""; display:block; clear:both}
+.realme7pro-camera-photo {float:left; width:360px; height:441px; background:url(../images/realme7pro-camera.png) no-repeat}
+.realme7pro-camera-content {float:right; padding:114px 0 0 0}
+.realme7pro-camera-title {font-weight:bold; font-size:42px; line-height:56px; color:#fff}
+.realme7pro-camera-props {display:table; color:#f1c835}
+.realme7pro-camera-props-row {display:table-row}
+.realme7pro-camera-prop {display:table-cell; vertical-align:top; padding:22px 0 0 66px}
+.realme7pro-camera-prop:first-child {padding-left:0}
+.realme7pro-camera-prop-title {font-size:32px; line-height:32px; font-weight:600}
+.realme7pro-camera-prop-text {font-size:22px; line-height:22px; font-weight:500; padding:5px 0 0 0}
+.realme7pro-screen {height:848px; position:relative; margin:-43px -167px 0 -167px; padding:175px 0 0 0; background:url(../images/realme7pro-screen.jpg) no-repeat center; text-align:center}
+.realme7pro-screen::after {content:""; display:block; position:absolute; left:0; bottom:-65px; right:0; height:65px; background:url(../images/realme7pro-screen-bottom.jpg) no-repeat center}
+.realme7pro-screen-title {font-weight:bold; font-size:45px; line-height:53px; color:#fff}
+.realme7pro-screen-text {font-weight:500; font-size:24px; line-height:28px; color:#f1c835; padding:448px 0 0 0}
+.realme7pro-screen-notice {font-size:12px; line-height:18px; font-weight:300; color:#fdfdfd; padding:21px 0 0 0}
+
+.realme7 {padding:86px 0 73px 0}
+.realme7-container {background:#000 url(../images/realme7-bottom.jpg) no-repeat center bottom; margin:0 -80px; padding:0 0 626px 0}
+.realme7-why {height:580px; background:#000 url(../images/realme7-why.jpg) no-repeat; padding:107px 80px 0 80px}
+.realme7-why::after {content:""; display:block; clear:both}
+.realme7-why .why-title {color:#fefefe}
+.realme7-why .why-list {color:#fff}
+.realme7-why .why-list-item {border-color:#fff}
+.realme7-buy {padding:18px 0 0 0}
+.realme7-cpu {height:628px; background:url(../images/realme7-cpu.jpg) no-repeat center; padding:485px 0 0 175px}
+.realme7-cpu-title {font-weight:600; font-size:42px; line-height:53px; color:#fff}
+.realme7-cpu-prop {font-size:0; line-height:0; color:#fff; padding:25px 0 0 0}
+.realme7-cpu-prop strong {display:inline-block; vertical-align:middle; font-weight:600; font-size:36px; line-height:39px}
+.realme7-cpu-prop em {display:inline-block; vertical-align:middle; width:687px; height:14px; background:url(../images/realme7-cpu-prop.png) no-repeat; margin:0 30px 0 20px}
+.realme7-cpu-prop span {display:inline-block; vertical-align:middle; font-size:26px; line-height:26px; height:26px}
+.realme7-charge {height:616px; background:url(../images/realme7-charge.jpg) no-repeat; padding:101px 0 0 80px}
+.realme7-charge-title {font-weight:600; color:#fff; font-size:42px; line-height:53px}
+.realme7-charge-props {margin:52px 0 0 0}
+.realme7-charge-props::after {content:""; display:block; clear:both}
+.realme7-charge-prop {float:left; color:#f1c835; position:relative}
+.realme7-charge-prop-1 {padding:0 0 0 61px}
+.realme7-charge-prop-1::before {content:""; display:block; position:absolute; left:3px; top:-2px; width:37px; height:61px; background:url(../images/icon-1.png) no-repeat}
+.realme7-charge-prop-2 {padding:0 0 0 72px; margin:0 0 0 101px}
+.realme7-charge-prop-2::before {content:""; display:block; position:absolute; left:0; top:4px; width:53px; height:53px; background:url(../images/icon-4.png) no-repeat}
+.realme7-charge-prop-title {font-size:32px; line-height:32px; font-weight:600}
+.realme7-charge-prop-text {font-size:22px; line-height:22px; font-weight:500; padding:5px 0 0 0}
+
+.realmex3 {background:#000; padding:92px 0 0 0}
+.realmex3::after {content:""; display:block; height:735px; margin:-55px 0 0 0; position:relative; background:url(../images/realmex3-bottom.png) no-repeat center top}
+.realmex3-why {margin:0 -80px; height:629px; background:#fff url(../images/realmex3-why.jpg) no-repeat; border-radius:12px; padding:46px 80px 0 80px}
+.realmex3-why::after {content:""; display:block; clear:both}
+.realmex3-why .why-title {color:#fefefe}
+.realmex3-why .why-list {color:#fff}
+.realmex3-why .why-list-item {border-color:#fff}
+.realmex3-variants {padding:33px 0 0 0}
+.realmex3-variants::after {content:""; display:block; clear:both}
+.realmex3-variant {float:left; margin:0 0 0 18px; height:56px; border:1px solid #fff; border-radius:10px; width:228px; text-align:center; color:#fff; font-weight:600; font-size:32px; line-height:54px}
+.realmex3-variant:first-child {margin:0}
+.realmex3-buy {padding:21px 0 0 0}
+.realmex3-camera {padding:85px 0 0 0}
+.realmex3-camera::after {content:""; display:block; clear:both}
+.realmex3-camera-photo {float:right; width:449px; height:459px; margin:0 -35px 0 0; background:url(../images/realmex3-camera.jpg) no-repeat}
+.realmex3-camera-content {float:left; padding:55px 0 0 0}
+.realmex3-camera-title {font-weight:bold; font-size:42px; line-height:56px; color:#fff}
+.realmex3-camera-props {display:table; color:#f1c835}
+.realmex3-camera-props-row {display:table-row}
+.realmex3-camera-prop {display:table-cell; vertical-align:top; padding:22px 0 0 66px}
+.realmex3-camera-prop:first-child {padding-left:0}
+.realmex3-camera-prop-title {font-size:32px; line-height:32px; font-weight:600}
+.realmex3-camera-prop-text {font-size:22px; line-height:22px; font-weight:500; padding:5px 0 0 0}
+.realmex3-zoom {margin:0 -86px}
+.realmex3-zoom::after {content:""; display:block; clear:both}
+.realmex3-zoom-item {float:left; width:25%; padding:0 4px; position:relative}
+.realmex3-zoom-item::before {content:""; display:block; position:absolute; left:-102px; bottom:-35px; width:187px; height:3px; background:url(../images/realmex3-zoom-sep.png) no-repeat}
+.realmex3-zoom-item:first-child::before {display:none}
+.realmex3-zoom-item img {display:block; width:100%; border-radius:10px}
+.realmex3-zoom-item span {display:block; position:absolute; left:0; right:0; text-align:center; color:#fff}
+.realmex3-zoom-item:nth-child(1) span {font-weight:500; font-size:23px; line-height:23px; bottom:-44px}
+.realmex3-zoom-item:nth-child(2) span {font-weight:500; font-size:30px; line-height:30px; bottom:-47px}
+.realmex3-zoom-item:nth-child(3) span {font-weight:500; font-size:34px; line-height:34px; bottom:-49px}
+.realmex3-zoom-item:nth-child(4) span {font-weight:600; font-size:45px; line-height:45px; bottom:-56px}
+.realmex3-cpu {margin:122px 0 0 0; height:735px; background:url(../images/realmex3-cpu.jpg) no-repeat center; padding:24px 0 0 0}
+.realmex3-cpu-title {font-weight:bold; font-size:42px; line-height:53px; color:#fff; text-align:center}
+.realmex3-cpu-props {color:#fff; padding:104px 0 0 0}
+.realmex3-cpu-props::after {content:""; display:block; clear:both}
+.realmex3-cpu-props-left {float:left}
+.realmex3-cpu-props-right {float:right}
+.realmex3-cpu-prop {padding:87px 0 0 0}
+.realmex3-cpu-prop-title {font-weight:600; font-size:40px; line-height:40px}
+.realmex3-cpu-prop-text {font-size:21px; line-height:21px; padding:7px 0 0 0}
+
+.remarks {padding:68px 0 81px 0; color:#777f87}
+.remarks-title {font-weight:500; font-size:25px; line-height:29px}
+.remarks-text {margin:15px 0 0 0; font-size:17px; line-height:29px}
+.remarks-text p {margin:0; padding:0}
