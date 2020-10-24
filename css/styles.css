@@ -71,16 +71,19 @@ a.btn:hover {opacity:0.8}
 .welcome-7-logo {width:305px; height:58px; background:url(../images/welcome-7-logo.svg) no-repeat; background-size:100%}
 .welcome-7-text-1 {font-weight:600; font-size:42px; line-height:53px; margin:24px 0 0 0}
 .welcome-7-text-2 {font-weight:500; font-size:22px; line-height:31px; padding:14px 0 0 0}
-.welcome-7-buy {padding:52px 0 0 0}
+.welcome-7-buy {padding:30px 0 0 0}
 .welcome-7-buy .btn {color:#fff; background:#c43333}
 .welcome-7-buy .btn span::after {background:#fff}
+.welcome-7-variants {padding:54px 0 0 0}
+.welcome-7-variant {display:inline-block; vertical-align:top; height:56px; border:1px solid #fff; border-radius:10px; width:228px; text-align:center; color:#fff; font-weight:600; font-size:32px; line-height:54px}
 
 @media screen and (max-width:1139px) {
     .welcome-7-container {padding:126px 0 0 0; text-align:center; max-width:450px; margin:0 auto}
     .welcome-7-logo {margin:0 auto}
     .welcome-7-text-1 {font-size:36px; line-height:43px; margin:33px 0 0 0}
     .welcome-7-text-2 {font-size:20px; line-height:24px}
-    .welcome-7-buy {padding:54px 0 0 0}
+    .welcome-7-variants {padding:45px 0 0 0}
+    .welcome-7-buy {padding:21px 0 0 0}
 }
 
 .welcome-7pro-container {position:relative; max-width:740px; text-align:center; padding:218px 0 0 0; color:#fff}
@@ -98,6 +101,7 @@ a.btn:hover {opacity:0.8}
     .welcome-7pro-text-1::after {width:30px; height:18px}
     .welcome-7pro-text-2 {font-size:36px; line-height:43px}
     .welcome-7pro-text-3 {font-size:20px; line-height:24px; padding:18px 0 0 0; max-width:340px; margin:0 auto}
+    .welcome-7pro-buy {padding:21px 0 0 0}
     .welcome-7pro-notice {line-height:14px; padding:18px 0 0 0}
     .welcome-7pro-notice br {display:none}
 }
@@ -218,12 +222,14 @@ a.btn:hover {opacity:0.8}
 
 .realme7 {padding:86px 0 73px 0}
 .realme7-container {background:#000 url(../images/realme7-bottom.jpg) no-repeat center bottom; margin:0 -80px; padding:0 0 626px 0}
-.realme7-why {height:580px; background:#000 url(../images/realme7-why.jpg) no-repeat; padding:107px 80px 0 80px}
+.realme7-why {height:580px; background:#000 url(../images/realme7-why.jpg) no-repeat; padding:77px 80px 0 80px}
 .realme7-why::after {content:""; display:block; clear:both}
 .realme7-why .why-title {color:#fefefe}
 .realme7-why .why-list {color:#fff}
 .realme7-why .why-list-item {border-color:#fff}
-.realme7-buy {padding:18px 0 0 0}
+.realme7-variants {padding:9px 0 0 0}
+.realme7-variant {display:inline-block; vertical-align:top; height:56px; border:1px solid #fff; border-radius:10px; width:228px; text-align:center; color:#fff; font-weight:600; font-size:32px; line-height:54px}
+.realme7-buy {padding:9px 0 0 0}
 .realme7-cpu {height:628px; background:url(../images/realme7-cpu.jpg) no-repeat center; padding:485px 0 0 175px}
 .realme7-cpu-title {font-weight:600; font-size:42px; line-height:53px; color:#fff}
 .realme7-cpu-prop {font-size:0; line-height:0; color:#fff; padding:25px 0 0 0}
@@ -246,6 +252,8 @@ a.btn:hover {opacity:0.8}
     .realme7 {padding:50px 0 29px 0}
     .realme7-container {max-width:450px; background:#000 url(../images/realme7-bottom-mobile.jpg) no-repeat center bottom; margin:0 auto; padding:0 0 313px 0}
     .realme7-why {height:971px; background:#000 url(../images/realme7-why-mobile.jpg) no-repeat; padding:46px 32px 0 32px}
+    .realme7-variants {padding:21px 0 0 0; text-align:center}
+    .realme7-buy {padding:18px 0 0 0}
     .realme7-cpu {height:501px; background:url(../images/realme7-cpu-mobile.jpg) no-repeat center; padding:325px 15px 0 15px; text-align:center}
     .realme7-cpu-title {font-size:34px; line-height:43px}
     .realme7-cpu-prop {padding:32px 0 0 0}
@@ -278,7 +286,6 @@ a.btn:hover {opacity:0.8}
 .realmex3-buy {padding:21px 0 0 0}
 .realmex3-camera {padding:85px 0 0 0}
 .realmex3-camera::after {content:""; display:block; clear:both}
-.realmex3-camera-photo {float:right; width:449px; height:459px; margin:0 -35px 0 0; background:url(../images/realmex3-camera.jpg) no-repeat}
 .realmex3-camera-content {float:left; padding:55px 0 0 0}
 .realmex3-camera-title {font-weight:bold; font-size:42px; line-height:56px; color:#fff}
 .realmex3-camera-props {display:table; color:#f1c835}
@@ -287,6 +294,7 @@ a.btn:hover {opacity:0.8}
 .realmex3-camera-prop:first-child {padding-left:0}
 .realmex3-camera-prop-title {font-size:32px; line-height:32px; font-weight:600}
 .realmex3-camera-prop-text {font-size:22px; line-height:22px; font-weight:500; padding:5px 0 0 0}
+.realmex3-camera-photo {float:right; width:449px; height:459px; margin:0 -35px 0 0; background:url(../images/realmex3-camera.jpg) no-repeat}
 .realmex3-zoom {margin:0 -86px}
 .realmex3-zoom::after {content:""; display:block; clear:both}
 .realmex3-zoom-item {float:left; width:25%; padding:0 4px; position:relative}
@@ -317,9 +325,37 @@ a.btn:hover {opacity:0.8}
     .realmex3-variant {margin:0 8px; height:48px; width:calc(50% - 16px); font-size:28px; line-height:46px}
     .realmex3-variant:first-child {margin:0 8px}
     .realmex3-buy .buy-price {display:none}
+    .realmex3-camera {padding:53px 0 0 0}
+    .realmex3-camera-content {float:none; padding:0; text-align:center}
+    .realmex3-camera-title {font-size:36px; line-height:43px; max-width:320px; margin:0 auto}
+    .realmex3-camera-props {display:block}
+    .realmex3-camera-props-row {display:block}
+    .realmex3-camera-prop {display:block; padding:34px 0 0 0}
+    .realmex3-camera-photo {float:none; width:367px; height:397px; margin:45px auto 0 auto; background:url(../images/realmex3-camera-mobile.jpg) no-repeat}
+    .realmex3-zoom {margin:0 -2px}
+    .realmex3-zoom-item {padding:0 2px}
+    .realmex3-zoom-item::before {left:-34px; bottom:-12px; width:64px; height:2px; background:url(../images/realmex3-zoom-sep-mobile.png) no-repeat}
+    .realmex3-zoom-item:nth-child(1) span {font-weight:500; font-size:8px; line-height:8px; bottom:-15px}
+    .realmex3-zoom-item:nth-child(2) span {font-weight:500; font-size:10px; line-height:10px; bottom:-18px}
+    .realmex3-zoom-item:nth-child(3) span {font-weight:500; font-size:12px; line-height:12px; bottom:-19px}
+    .realmex3-zoom-item:nth-child(4) span {font-weight:600; font-size:16px; line-height:16px; bottom:-20px}
+    .realmex3-cpu {margin:78px 0 0 0; height:825px; background:url(../images/realmex3-cpu-mobile.jpg) no-repeat center 21px; padding:0}
+    .realmex3-cpu-title {font-size:36px; line-height:43px}
+    .realmex3-cpu-props {padding:360px 0 0 0; text-align:center}
+    .realmex3-cpu-props-left {float:none}
+    .realmex3-cpu-props-right {float:none}
+    .realmex3-cpu-prop {padding:16px 0 0 0}
 }
 
 .remarks {padding:68px 0 81px 0; color:#777f87}
 .remarks-title {font-weight:500; font-size:25px; line-height:29px}
 .remarks-text {margin:15px 0 0 0; font-size:17px; line-height:29px}
 .remarks-text p {margin:0; padding:0}
+
+.up-link {display:none; width:99px; height:99px; position:fixed; right:105px; bottom:110px; z-index:98; background:url(../images/up-link.png) no-repeat center; border-radius:50%; transition:box-shadow 0.2s}
+.up-link:hover {opacity:0.8}
+.up-link.visible {display:block}
+
+@media screen and (max-width:1139px) {
+    .up-link.visible {display:none}
+}
