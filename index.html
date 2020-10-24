@@ -7,6 +7,7 @@
         <meta name="description" content="Realme" />
 
         <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/slick/slick.css" />
 
         <meta name="viewport" content="width=device-width" />
     </head>
@@ -17,29 +18,77 @@
         <div class="wrapper">
 
             <div class="header">
-                <div class="container">
-                    <div class="logo"></div>
-                    <div class="logo-dns"></div>
-                </div>
+                <div class="logo"></div>
+                <div class="logo-dns"></div>
             </div>
 
+            <!-- welcome -->
             <div class="welcome">
-                <div class="container">
-                    <div class="welcome-container">
-                        <div class="welcome-logo"></div>
-                        <div class="welcome-text-1">Эволюция быстрой зарядки 65 Вт</div>
-                        <div class="welcome-text-2">100% за 34 минуты</div>
-                        <div class="welcome-text-3">Квадрокамера Sony IMX682 64 Мп | Селфи-камера 32 Мп в экране<br /> Super AMOLED экран 6.4" | Гарантия на экран 6 месяцев*</div>
-                        <div class="welcome-buy">
-                            <div class="buy-inner">
-                                <div class="buy-price"><strong><span>24 999</span> ₽</strong> <em>27 999₽</em></div>
-                                <div class="buy-link"><a href="#" class="btn" target="_blank"><span>8 ГБ + 128 ГБ</span>Купить</a></div>
+                <div class="welcome-slider">
+                    <div class="welcome-item">
+                        <div class="welcome-bg" style="background-image:url(images/welcome-7.jpg)"></div>
+                        <div class="welcome-bg-mobile" style="background-image:url(images/welcome-7-mobile.jpg)"></div>
+                        <div class="container">
+                            <div class="welcome-7-container">
+                                <div class="welcome-7-logo"></div>
+                                <div class="welcome-7-text-1">Максимальная производительность.<br /> Быстрая зарядка.</div>
+                                <div class="welcome-7-text-2">Процессор Helio G95 | Dart Charge 30 Вт | Экран 90 Гц</div>
+                                <div class="welcome-7-buy">
+                                    <div class="buy-inner">
+                                        <div class="buy-price"><strong><span>19 999</span> ₽</strong> <em>21 999₽</em></div>
+                                        <div class="buy-link"><a href="#" class="btn" target="_blank"><span>8 ГБ + 128 ГБ</span>Купить</a></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="welcome-notice">*Единоразовая бесплатная замена экрана в течение первых 6-ти месяцев при условии покупки смартфона<br /> realme 7 Pro в срок до 16 ноября, и его активации в течение 7 дней с даты покупки девайса<br /> С подробными условиями можно ознакомиться на официальном сайте realme.com/ru/</div>
+                    </div>
+
+                    <div class="welcome-item">
+                        <div class="welcome-bg" style="background-image:url(images/welcome-7pro.jpg)"></div>
+                        <div class="welcome-bg-mobile" style="background-image:url(images/welcome-7pro-mobile.jpg)"></div>
+                        <div class="container">
+                            <div class="welcome-7pro-container">
+                                <div class="welcome-7pro-logo"></div>
+                                <div class="welcome-7pro-text-1">Эволюция быстрой зарядки 65 Вт</div>
+                                <div class="welcome-7pro-text-2">100% за 34 минуты</div>
+                                <div class="welcome-7pro-text-3">Квадрокамера Sony IMX682 64 Мп | Селфи-камера 32 Мп в экране<br /> Super AMOLED экран 6.4" | Гарантия на экран 6 месяцев*</div>
+                                <div class="welcome-7pro-buy">
+                                    <div class="buy-inner">
+                                        <div class="buy-price"><strong><span>24 999</span> ₽</strong> <em>27 999₽</em></div>
+                                        <div class="buy-link"><a href="#" class="btn" target="_blank"><span>8 ГБ + 128 ГБ</span>Купить</a></div>
+                                    </div>
+                                </div>
+                                <div class="welcome-7pro-notice">*Единоразовая бесплатная замена экрана в течение первых 6-ти месяцев при условии покупки смартфона<br /> realme 7 Pro в срок до 16 ноября, и его активации в течение 7 дней с даты покупки девайса<br /> С подробными условиями можно ознакомиться на официальном сайте realme.com/ru/</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="welcome-item">
+                        <div class="welcome-bg" style="background-image:url(images/welcome-x3.jpg)"></div>
+                        <div class="welcome-bg-mobile" style="background-image:url(images/welcome-x3-mobile.jpg)"></div>
+                        <div class="container">
+                            <div class="welcome-x3-container">
+                                <div class="welcome-x3-logo"></div>
+                                <div class="welcome-x3-text-1">Супер камера. Зум 60х</div>
+                                <div class="welcome-x3-text-2">Перископический зум | Экран 120 Гц | Snapdragon 855+</div>
+                                <div class="welcome-x3-buy">
+                                    <div class="buy-inner">
+                                        <div class="buy-price"><strong><span>34 999</span> ₽</strong> <em>39 999₽</em></div>
+                                        <div class="buy-link"><a href="#" class="btn" target="_blank"><span>8 ГБ + 128 ГБ</span>Купить</a></div>
+                                    </div>
+                                </div>
+                                <div class="welcome-x3-buy">
+                                    <div class="buy-inner">
+                                        <div class="buy-price"><strong><span>39 999</span> ₽</strong> <em>44 999₽</em></div>
+                                        <div class="buy-link"><a href="#" class="btn" target="_blank"><span>12 ГБ + 256 ГБ</span>Купить</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- welcome END -->
 
             <div class="links">
                 <div class="container">
@@ -80,6 +129,22 @@
                                         <div class="why-list-item">Игровой процессор<br /> Snapdragon 720G</div>
                                         <div class="why-list-item">Cелфи-камера в<br /> экране 32 Мп</div>
                                         <div class="why-list-item">Сертификат<br /> надежности<br /> TÜV Rheinland</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="why-list why-list-mobile">
+                                <div class="why-list-inner">
+                                    <div class="why-list-row">
+                                        <div class="why-list-item">Быстрая зарядка<br /> SuperDart 65 Вт</div>
+                                        <div class="why-list-item">Квадрокамера<br /> Sony IMX682 64 Мп</div>
+                                    </div>
+                                    <div class="why-list-row">
+                                        <div class="why-list-item">Игровой процессор<br /> Snapdragon 720G</div>
+                                        <div class="why-list-item">Cелфи-камера в<br /> экране 32 Мп</div>
+                                    </div>
+                                    <div class="why-list-row">
+                                        <div class="why-list-item">Сертификат<br /> надежности<br /> TÜV Rheinland</div>
+                                        <div class="why-list-item">Экран 6.4"<br /> Super AMOLED</div>
                                     </div>
                                 </div>
                             </div>
@@ -169,6 +234,22 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="why-list why-list-mobile">
+                                    <div class="why-list-inner">
+                                        <div class="why-list-row">
+                                            <div class="why-list-item">realme UI<br /> на базе Andriod</div>
+                                            <div class="why-list-item">Быстрая зарядка<br /> 30 Вт</div>
+                                        </div>
+                                        <div class="why-list-row">
+                                            <div class="why-list-item">Мощный<br /> аккумулятор<br /> 5000 мАч</div>
+                                            <div class="why-list-item">Экран 90 Гц<br /> Разрешение<br /> FULL HD+</div>
+                                        </div>
+                                        <div class="why-list-row">
+                                            <div class="why-list-item">Cелфи-камера в<br /> экране 16 Мп</div>
+                                            <div class="why-list-item">Процессор Helio G95<br /> 300 000<br /> баллов Antutu</div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="realme7-buy">
                                     <div class="buy-inner">
                                         <div class="buy-price"><strong><span>19 999</span> ₽</strong> <em>21 999₽</em></div>
@@ -179,12 +260,12 @@
                         </div>
 
                         <div class="realme7-cpu">
-                            <div class="realme7-cpu-title">Процессор Helio G95, 300 000 баллов в AnTuTu</div>
+                            <div class="realme7-cpu-title">Процессор Helio G95, 300&nbsp;000 баллов в AnTuTu</div>
                             <div class="realme7-cpu-prop"><strong>realme 7</strong><em></em><span>302,716</span></div>
                         </div>
 
                         <div class="realme7-charge">
-                            <div class="realme7-charge-title">Быстрая зарядка Dart Charge<br /> 30 Вт Быстро и безопасно</div>
+                            <div class="realme7-charge-title">Быстрая зарядка Dart&nbsp;Charge<br /> 30 Вт Быстро&nbsp;и&nbsp;безопасно</div>
                             <div class="realme7-charge-props">
                                 <div class="realme7-charge-prop realme7-charge-prop-1">
                                     <div class="realme7-charge-prop-title">4500 мАч</div>
@@ -219,6 +300,27 @@
                                         <div class="why-list-item">1500 Мбит/с*<br /> 12 ГБ + 256 ГБ<br /> Объемное хранилище</div>
                                         <div class="why-list-item">32 Мп + 8 Мп<br /> Двойная<br /> селфи-камера</div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="why-list why-list-mobile">
+                                <div class="why-list-inner">
+                                    <div class="why-list-row">
+                                        <div class="why-list-item">Квадрокамера 64Мп<br /> 60-кратный зум</div>
+                                        <div class="why-list-item">Ульраплавный<br /> Экран 120 Гц</div>
+                                    </div>
+                                    <div class="why-list-row">
+                                        <div class="why-list-item">Snapdragon 855+<br /> Флагманский<br /> процессор</div>
+                                        <div class="why-list-item">1500 Мбит/с*<br /> 12 ГБ + 256 ГБ<br /> Объемное хранилище</div>
+                                    </div>
+                                    <div class="why-list-row">
+                                        <div class="why-list-item">realme UI<br /> на базе Andriod</div>
+                                        <div class="why-list-item">32 Мп + 8 Мп<br /> Двойная<br /> селфи-камера</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="realmex3-buy-mobile">
+                                <div class="buy-inner">
+                                    <div class="buy-price"><strong><span>от 34 999</span> ₽</strong> <em>39 999₽</em></div>
                                 </div>
                             </div>
                             <div class="realmex3-variants">
@@ -321,6 +423,8 @@
         </script>
         <script src="js/fonts.js"></script>
 
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/slick/slick.min.js"></script>
         <script src="js/tools.js"></script>
 
     </body>

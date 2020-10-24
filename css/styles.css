@@ -18,10 +18,14 @@ body {min-width:480px; margin:0; padding:0; background:#fff; -webkit-text-size-a
     .container {padding:0 15px}
 }
 
-.header {position:absolute; left:0; top:0; right:0; padding:39px 0 0 68px; z-index:1}
+.header {position:absolute; left:0; top:0; right:0; padding:39px 0 0 68px; z-index:10}
 .logo {float:left; width:126px; height:38px; background:url(../images/logo.svg) no-repeat; background-size:100%}
 .logo-dns {float:left; width:228px; height:24px; background:url(../images/logo-dns.png) no-repeat; margin:6px 0 0 47px; position:relative}
 .logo-dns::before {content:""; display:block; width:2px; height:38px; background:#b0afb4; position:absolute; left:-24px; top:-6px}
+
+@media screen and (max-width:1139px) {
+    .header {padding:40px 0 0 40px}
+}
 
 .buy-inner {display:inline-block; vertical-align:top; text-align:left}
 .buy-price {line-height:64px}
@@ -30,36 +34,123 @@ body {min-width:480px; margin:0; padding:0; background:#fff; -webkit-text-size-a
 .buy-price em {font-style:normal; font-size:28px; color:#b9b8b8; text-decoration:line-through; margin:0 0 0 18px}
 .buy-link {margin:-14px 0 0 0}
 
-.btn {display:inline-block; vertical-align:top; height:55px; padding:0 20px; color:#110e27; text-decoration:none; border-radius:8px; font-weight:bold; font-size:34px; line-height:55px; background:#f1c835; transition:all 0.2s}
-.btn:hover {opacity:0.8}
+@media screen and (max-width:1139px) {
+    .buy-inner {display:block; text-align:center}
+    .buy-price {line-height:42px}
+    .buy-price strong {font-size:42px}
+    .buy-price strong span {font-size:42px}
+    .buy-price em {font-size:20px; margin:0 0 0 14px}
+    .buy-link {margin:-7px 0 0 0}
+}
+
+.btn {display:inline-block; position:relative; vertical-align:top; height:55px; padding:0 20px; color:#110e27; text-decoration:none; border-radius:8px; font-weight:bold; font-size:34px; line-height:55px; background:#f1c835; transition:all 0.2s}
+a.btn:hover {opacity:0.8}
 .btn span {font-size:32px; font-weight:600; display:inline-block; vertical-align:top; position:relative; margin:0 57px 0 0}
 .btn span::after {content:""; display:block; position:absolute; right:-32px; top:8px; width:2px; height:38px; background:#3d2d2b}
 
-.welcome {position:relative; height:791px; background:#0d0e26 url(../images/welcome.jpg) no-repeat center}
-.welcome-container {max-width:740px; text-align:center; padding:218px 0 0 0; color:#fff}
-.welcome-logo {width:344px; height:53px; margin:0 auto; background:url(../images/welcome-logo.svg) no-repeat; background-size:100%}
-.welcome-text-1 {font-weight:600; font-size:42px; line-height:48px; margin:19px 0 0 0}
-.welcome-text-1::after {content:""; display:inline-block; vertical-align:middle; width:32px; height:23px; background:url(../images/welcome-text-1.svg) no-repeat; background-size:100%; margin:0 0 0 11px}
-.welcome-text-2 {font-weight:600; font-size:42px; line-height:48px}
-.welcome-text-3 {font-weight:500; font-size:22px; line-height:31px; padding:16px 0 0 0}
-.welcome-buy {padding:38px 0 0 0}
-.welcome-notice {font-weight:300; font-size:12px; line-height:15px; color:#c1c0c0; padding:93px 0 0 0}
+@media screen and (max-width:1139px) {
+    .btn {display:block; padding:0; text-align:center; font-size:32px}
+    .btn span {margin:0 43px 0 0}
+    .btn span::after {content:""; display:block; position:absolute; right:-20px; top:12px; width:1px; height:28px; background:#3d2d2b}
+}
+
+.welcome {background:#0d0e26}
+.welcome-slider {position:relative; height:791px; white-space:nowrap; font-size:0; line-height:0; letter-spacing:-1px}
+.welcome-item {display:inline-block; width:100%; vertical-align:top; height:791px; position:relative; white-space:normal; letter-spacing:0}
+.welcome-bg {position:absolute; left:0; top:0; right:0; bottom:0; background:no-repeat center}
+.welcome-bg-mobile {display:none}
+
+@media screen and (max-width:1139px) {
+    .welcome-slider {height:1080px}
+    .welcome-item {height:1080px}
+    .welcome-bg {display:none}
+    .welcome-bg-mobile {display:block; position:absolute; left:0; top:0; right:0; bottom:0; background:no-repeat center bottom; background-size:100% auto}
+}
+
+.welcome-7-container {position:relative; padding:211px 0 0 0; color:#fff}
+.welcome-7-logo {width:305px; height:58px; background:url(../images/welcome-7-logo.svg) no-repeat; background-size:100%}
+.welcome-7-text-1 {font-weight:600; font-size:42px; line-height:53px; margin:24px 0 0 0}
+.welcome-7-text-2 {font-weight:500; font-size:22px; line-height:31px; padding:14px 0 0 0}
+.welcome-7-buy {padding:52px 0 0 0}
+.welcome-7-buy .btn {color:#fff; background:#c43333}
+.welcome-7-buy .btn span::after {background:#fff}
+
+@media screen and (max-width:1139px) {
+    .welcome-7-container {padding:126px 0 0 0; text-align:center; max-width:450px; margin:0 auto}
+    .welcome-7-logo {margin:0 auto}
+    .welcome-7-text-1 {font-size:36px; line-height:43px; margin:33px 0 0 0}
+    .welcome-7-text-2 {font-size:20px; line-height:24px}
+    .welcome-7-buy {padding:54px 0 0 0}
+}
+
+.welcome-7pro-container {position:relative; max-width:740px; text-align:center; padding:218px 0 0 0; color:#fff}
+.welcome-7pro-logo {width:344px; height:53px; margin:0 auto; background:url(../images/welcome-7pro-logo.svg) no-repeat; background-size:100%}
+.welcome-7pro-text-1 {font-weight:600; font-size:42px; line-height:48px; margin:19px 0 0 0}
+.welcome-7pro-text-1::after {content:""; display:inline-block; vertical-align:middle; width:32px; height:23px; background:url(../images/welcome-7pro-text-1.svg) no-repeat; background-size:100%; margin:0 0 0 11px}
+.welcome-7pro-text-2 {font-weight:600; font-size:42px; line-height:48px}
+.welcome-7pro-text-3 {font-weight:500; font-size:22px; line-height:31px; padding:16px 0 0 0}
+.welcome-7pro-buy {padding:38px 0 0 0}
+.welcome-7pro-notice {font-weight:300; font-size:12px; line-height:15px; color:#c1c0c0; padding:93px 0 0 0}
+
+@media screen and (max-width:1139px) {
+    .welcome-7pro-container {max-width:450px; padding:142px 0 0 0}
+    .welcome-7pro-text-1 {font-size:36px; line-height:43px; margin:35px 0 0 0}
+    .welcome-7pro-text-1::after {width:30px; height:18px}
+    .welcome-7pro-text-2 {font-size:36px; line-height:43px}
+    .welcome-7pro-text-3 {font-size:20px; line-height:24px; padding:18px 0 0 0; max-width:340px; margin:0 auto}
+    .welcome-7pro-notice {line-height:14px; padding:18px 0 0 0}
+    .welcome-7pro-notice br {display:none}
+}
+
+.welcome-x3-container {position:relative; padding:172px 0 0 0; color:#fff}
+.welcome-x3-logo {width:421px; height:50px; background:url(../images/welcome-x3-logo.png) no-repeat; background-size:100%}
+.welcome-x3-text-1 {font-weight:600; font-size:42px; line-height:53px; margin:24px 0 0 0}
+.welcome-x3-text-2 {font-weight:500; font-size:22px; line-height:31px; padding:14px 0 0 0}
+.welcome-x3-buy {padding:42px 0 0 0}
+.welcome-x3-buy+.welcome-x3-buy {padding:20px 0 0 0}
+.welcome-x3-buy .btn {color:#fff; background:#c43333}
+.welcome-x3-buy .btn span::after {background:#fff}
+
+@media screen and (max-width:1139px) {
+    .welcome-x3-container {padding:139px 0 0 0; max-width:450px; margin:0 auto; text-align:center}
+    .welcome-x3-logo {margin:0 auto}
+    .welcome-x3-text-1 {font-size:36px; line-height:43px; margin:32px 0 0 0}
+    .welcome-x3-text-2 {font-size:20px; line-height:24px; padding:13px 0 0 0}
+    .welcome-x3-buy {padding:35px 0 0 0}
+    .welcome-x3-buy+.welcome-x3-buy {padding:15px 0 0 0}
+}
 
 .links {padding:33px 0 63px 0; font-size:0; line-height:0; letter-spacing:-1px; text-align:center}
 .links-inner {margin:0 -10px}
 .links-item {display:inline-block; vertical-align:top; width:33.33%; padding:0 10px}
 .links-item a {display:block; padding:84px 0 0 0; position:relative}
-.links-item a::before {content:""; display:block; height:170px; background:url(../images/links-item-bg.png) no-repeat center; background-size:cover; transition:all 0.2s}
+.links-item a::before {content:""; display:block; height:170px; background:url(../images/links-item-bg.png) no-repeat center; background-size:cover; transition:all 0.2s; border-radius:10px}
 .links-item a:hover::before {opacity:0.8}
 .links-item-photo {position:absolute; left:0; top:0; right:0}
 .links-item:first-child .links-item-photo {top:6px}
+.links-inner .slick-slide .links-item-photo img {display:inline-block}
+
+@media screen and (max-width:1139px) {
+    .links {padding:66px 0 69px 0; max-width:368px; margin:0 auto; white-space:nowrap}
+    .links-item {width:100%}
+    .links-inner .slick-list {overflow:visible}
+}
 
 .why-content {float:right; width:582px}
 .why-title {font-weight:bold; font-size:42px; line-height:47px}
-.why-list {margin:35px -13px 0 -13px; font-weight:600; font-size:18px; line-height:21px}
+.why-list {margin:35px -10px 0 -10px; font-weight:600; font-size:18px; line-height:21px}
+.why-list-mobile {display:none}
 .why-list-inner {display:table; width:100%; border-collapse:separate; border-spacing:10px 10px}
 .why-list-row {display:table-row}
 .why-list-item {display:table-cell; vertical-align:middle; width:33.33%; text-align:center; position:relative; border-width:1px; border-style:solid; border-radius:5px; padding:7px 0 9px 0; white-space:nowrap}
+
+@media screen and (max-width:1139px) {
+    .why-content {float:none; width:386px; margin:0 auto}
+    .why-title {text-align:center; font-size:36px; line-height:43px}
+    .why-list {display:none; margin:11px -10px 0 -10px}
+    .why-list-mobile {display:block}
+    .why-list-item {width:50%}
+}
 
 .realme7pro {background:#030a0d; padding:97px 0 0 0}
 .realme7pro-why {margin:0 -80px; height:580px; background:#fff url(../images/realme7pro-why.jpg) no-repeat; border-radius:10px; padding:96px 80px 0 80px}
@@ -99,6 +190,32 @@ body {min-width:480px; margin:0; padding:0; background:#fff; -webkit-text-size-a
 .realme7pro-screen-text {font-weight:500; font-size:24px; line-height:28px; color:#f1c835; padding:448px 0 0 0}
 .realme7pro-screen-notice {font-size:12px; line-height:18px; font-weight:300; color:#fdfdfd; padding:21px 0 0 0}
 
+@media screen and (max-width:1139px) {
+    .realme7pro {padding:53px 0 0 0}
+    .realme7pro-why {margin:0 auto; width:450px; height:982px; background:#fff url(../images/realme7pro-why-mobile.jpg) no-repeat; padding:46px 32px 0 32px}
+    .realme7pro-buy {padding:34px 0 0 0}
+    .realme7pro-charge {margin:0 auto; width:450px; height:auto; background:url(../images/realme7pro-charge-mobile.jpg) no-repeat center top; padding:57px 0 0 0; text-align:center}
+    .realme7pro-charge-title {font-size:36px; line-height:43px}
+    .realme7pro-charge-props {margin:31px 0 0 0}
+    .realme7pro-charge-prop {float:none}
+    .realme7pro-charge-prop-1 {padding:0}
+    .realme7pro-charge-prop-1::before {position:relative; left:auto; top:auto; margin:0 auto 11px auto}
+    .realme7pro-charge-prop-2 {padding:0; margin:36px 0 0 0}
+    .realme7pro-charge-prop-2::before {position:relative; left:auto; top:auto; margin:0 auto 3px auto}
+    .realme7pro-charge-prop-3 {padding:0; clear:none; margin:37px 0 0 0}
+    .realme7pro-charge-prop-3::before {position:relative; left:auto; top:auto; margin:0 auto 6px auto}
+    .realme7pro-camera {padding:76px 0 0 0; text-align:center}
+    .realme7pro-camera-photo {float:none; margin:0 auto}
+    .realme7pro-camera-content {float:none; padding:37px 0 0 0}
+    .realme7pro-camera-title {font-size:36px; line-height:43px}
+    .realme7pro-camera-prop {padding-left:0}
+    .realme7pro-screen {height:590px; margin:-29px -15px 0 -15px; background:url(../images/realme7pro-screen-mobile.jpg) no-repeat center; padding:101px 0 0 0}
+    .realme7pro-screen::after {display:none}
+    .realme7pro-screen-title {font-size:36px; line-height:43px; max-width:270px; margin:0 auto}
+    .realme7pro-screen-text {font-size:20px; line-height:24px; padding:228px 0 0 0}
+    .realme7pro-screen-notice {font-size:14px; line-height:17px; padding:10px 0 0 0}
+}
+
 .realme7 {padding:86px 0 73px 0}
 .realme7-container {background:#000 url(../images/realme7-bottom.jpg) no-repeat center bottom; margin:0 -80px; padding:0 0 626px 0}
 .realme7-why {height:580px; background:#000 url(../images/realme7-why.jpg) no-repeat; padding:107px 80px 0 80px}
@@ -125,6 +242,27 @@ body {min-width:480px; margin:0; padding:0; background:#fff; -webkit-text-size-a
 .realme7-charge-prop-title {font-size:32px; line-height:32px; font-weight:600}
 .realme7-charge-prop-text {font-size:22px; line-height:22px; font-weight:500; padding:5px 0 0 0}
 
+@media screen and (max-width:1139px) {
+    .realme7 {padding:50px 0 29px 0}
+    .realme7-container {max-width:450px; background:#000 url(../images/realme7-bottom-mobile.jpg) no-repeat center bottom; margin:0 auto; padding:0 0 313px 0}
+    .realme7-why {height:971px; background:#000 url(../images/realme7-why-mobile.jpg) no-repeat; padding:46px 32px 0 32px}
+    .realme7-cpu {height:501px; background:url(../images/realme7-cpu-mobile.jpg) no-repeat center; padding:325px 15px 0 15px; text-align:center}
+    .realme7-cpu-title {font-size:34px; line-height:43px}
+    .realme7-cpu-prop {padding:32px 0 0 0}
+    .realme7-cpu-prop strong {font-size:24px; line-height:28px}
+    .realme7-cpu-prop em {width:205px; background:url(../images/realme7-cpu-prop-mobile.png) no-repeat; margin:0 12px}
+    .realme7-cpu-prop span {font-size:18px; line-height:22px; height:22px}
+    .realme7-charge {padding:0; height:524px; background:url(../images/realme7-charge-mobile.jpg) no-repeat center 95px}
+    .realme7-charge-title {font-size:34px; line-height:43px; text-align:center}
+    .realme7-charge-title br {display:none}
+    .realme7-charge-props {margin:67px 0 0 27px}
+    .realme7-charge-prop {float:none}
+    .realme7-charge-prop-1 {padding:0 0 0 66px}
+    .realme7-charge-prop-1::before {left:6px}
+    .realme7-charge-prop-2 {padding:0 0 0 66px; margin:21px 0 0 0}
+    .realme7-charge-prop-2::before {left:0}
+}
+
 .realmex3 {background:#000; padding:92px 0 0 0}
 .realmex3::after {content:""; display:block; height:735px; margin:-55px 0 0 0; position:relative; background:url(../images/realmex3-bottom.png) no-repeat center top}
 .realmex3-why {margin:0 -80px; height:629px; background:#fff url(../images/realmex3-why.jpg) no-repeat; border-radius:12px; padding:46px 80px 0 80px}
@@ -132,6 +270,7 @@ body {min-width:480px; margin:0; padding:0; background:#fff; -webkit-text-size-a
 .realmex3-why .why-title {color:#fefefe}
 .realmex3-why .why-list {color:#fff}
 .realmex3-why .why-list-item {border-color:#fff}
+.realmex3-buy-mobile {display:none}
 .realmex3-variants {padding:33px 0 0 0}
 .realmex3-variants::after {content:""; display:block; clear:both}
 .realmex3-variant {float:left; margin:0 0 0 18px; height:56px; border:1px solid #fff; border-radius:10px; width:228px; text-align:center; color:#fff; font-weight:600; font-size:32px; line-height:54px}
@@ -168,6 +307,17 @@ body {min-width:480px; margin:0; padding:0; background:#fff; -webkit-text-size-a
 .realmex3-cpu-prop {padding:87px 0 0 0}
 .realmex3-cpu-prop-title {font-weight:600; font-size:40px; line-height:40px}
 .realmex3-cpu-prop-text {font-size:21px; line-height:21px; padding:7px 0 0 0}
+
+@media screen and (max-width:1139px) {
+    .realmex3 {padding:40px 0 0 0}
+    .realmex3::after {height:296px; margin:0; background:url(../images/realmex3-bottom-mobile.jpg) no-repeat center top}
+    .realmex3-why {margin:0 auto; width:446px; height:948px; background:#fff url(../images/realmex3-why-mobile.jpg) no-repeat; padding:32px 20px 0 20px}
+    .realmex3-buy-mobile {display:block; padding:25px 0 0 0}
+    .realmex3-variants {padding:0; margin:0 -8px}
+    .realmex3-variant {margin:0 8px; height:48px; width:calc(50% - 16px); font-size:28px; line-height:46px}
+    .realmex3-variant:first-child {margin:0 8px}
+    .realmex3-buy .buy-price {display:none}
+}
 
 .remarks {padding:68px 0 81px 0; color:#777f87}
 .remarks-title {font-weight:500; font-size:25px; line-height:29px}
