@@ -1,19 +1,5 @@
 $(document).ready(function() {
 
-    $('.welcome-slider').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        speed: 1000,
-        fade: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        pauseOnFocus: false,
-        pauseOnHover: false,
-        arrows: false,
-        dots: false
-    });
-
     $('.links-item a').click(function(e) {
         var curBlock = $($(this).attr('href'));
         if (curBlock.length == 1) {
@@ -31,6 +17,10 @@ $(document).ready(function() {
 
 $(window).on('load resize', function() {
 
+    if ($('.welcome-slider').hasClass('slick-slider')) {
+        $('.welcome-slider').slick('unslick');
+    }
+
     if ($(window).width() > 1140) {
         $('.links-inner').each(function() {
             var curList = $(this);
@@ -38,6 +28,14 @@ $(window).on('load resize', function() {
                 curList.slick('unslick');
             }
         });
+
+        var newSliderHTML = '';
+        for (var i = 0; i < $('.welcome-item').length; i++) {
+            var curItem = $('.welcome-item[data-desktopsort="' + i + '"]');
+            console.log(curItem);
+            newSliderHTML += '<div class="welcome-item" data-desktopsort="' + curItem.attr('data-desktopsort') + '" data-mobilesort="' + curItem.attr('data-mobilesort') + '">' + curItem.html() + '</div>';
+        }
+        $('.welcome-slider').html(newSliderHTML);
     } else {
         $('.links-inner').each(function() {
             var curList = $(this);
@@ -51,7 +49,28 @@ $(window).on('load resize', function() {
                 });
             }
         });
+
+        var newSliderHTML = '';
+        for (var i = 0; i < $('.welcome-item').length; i++) {
+            var curItem = $('.welcome-item[data-mobilesort="' + i + '"]');
+            newSliderHTML += '<div class="welcome-item" data-desktopsort="' + curItem.attr('data-desktopsort') + '" data-mobilesort="' + curItem.attr('data-mobilesort') + '">' + curItem.html() + '</div>';
+        }
+        $('.welcome-slider').html(newSliderHTML);
     }
+
+    $('.welcome-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 1000,
+        fade: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        arrows: false,
+        dots: false
+    });
 
 });
 
